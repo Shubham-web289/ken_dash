@@ -32,7 +32,7 @@ def launch_dash_column_editor(df):
         visible_cols = [col["id"] for col in columns]
         return f"✅ Current shape: {df_new.shape[0]} rows × {len(visible_cols)} columns"
 
-    app.run()
+    app.run_server()
 
 
 if __name__ == "__main__":
